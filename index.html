@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="interior.css" />
+    <title>Interactive Home Interior</title>
+  </head>
+  <body>
+    <div id="bulb" style="filter: brightness(100%)"></div>
+    <div id="nav-bar">
+      see
+      <div id="outdoor" class="navHead">
+        <button id="Sbirds" onclick="Sbirds()">birds</button>
+        <button id="Splane" onclick="plane()">plane</button>
+        <button id="Smonkey" onclick="Smonkey()">monkey</button>
+      </div>
+      <div id="indoor" class="navHead">
+        <button id="Spendulum" onclick="pendulum()">pendulum</button>
+        <button id="Spainting" onclick="photo()">change painting</button>
+      </div>
+      <div id="dayNight" class="navHead">
+        <button id="nnnn" onclick="night()">Night</button>
+        <button id="Slight" onclick="light()">Lamp On</button>
+      </div>
+    </div>
+    <section id="container">
+      <div id="clock-bg">
+        <div id="clockContainer">
+          <div id="hour"></div>
+          <div id="minute"></div>
+          <div id="second"></div>
+        </div>
+        <div id="pendulum"></div>
+      </div>
+      <div id="painting"></div>
+      <div id="peek"></div>
+      <div id="plane"></div>
+      <div id="birds"></div>
+    </section>
+
+    <script src="interior.js"></script>
+  </body>
+</html>
