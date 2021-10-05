@@ -2,8 +2,8 @@ body {
   overflow: hidden;
 }
 #nav-bar {
-  margin-top: 0px;
-  height: 10vh;
+  margin-top: 11px;
+  height: 5vh;
   width: 100vw;
   position: fixed;
   z-index: 1;
@@ -14,10 +14,11 @@ body {
 }
 .navHead {
   height: inherit;
-  width: 25%;
+  width: 24%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
   display: flex;
   border: 3px solid rgb(77, 60, 45);
-
   border-radius: 30px;
 }
 button {
@@ -27,6 +28,7 @@ button {
   color: rgb(20, 13, 3);
   font-family: fantasy;
   background-color: #f7e0e0;
+  cursor: pointer;
 }
 
 #dayNight {
@@ -56,6 +58,14 @@ button {
   }
 }
 
+@keyframes day {
+  0% {
+    filter: brightness(30%);
+  }
+  100% {
+    filter: brightness(100%);
+  }
+}
 #clock-bg {
   height: 27%;
   width: 12.5%;
@@ -220,4 +230,37 @@ button {
   transform: perspective(19vmin) rotateX(18deg);
   z-index: -1;
   box-shadow: 0 27px 142px 90px yellow;
+}
+
+@media (max-width: 600px) {
+  #nav-bar {
+    margin-top: 11px;
+    height: 34vh;
+    width: 41vw;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    font-family: fantasy;
+    justify-content: center;
+    right: 4vw;
+    top: -6vh;
+  }
+  .navHead {
+    height: inherit;
+    width: auto;
+    display: flex;
+    border: 3px solid rgb(77, 60, 45);
+    border-radius: 30px;
+  }
+  .navHead {
+    height: 18%;
+    width: auto;
+    display: flex;
+    border: 3px solid rgb(77, 60, 45);
+    border-radius: 30px;
+  }
+  #dayNight {
+    width: auto;
+  }
 }
